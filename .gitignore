@@ -1,0 +1,11 @@
+# Ignore Power BI report files (.pbix) to avoid large files
+*.pbix
+
+# Ignore Power BI data cache files
+*.pbit.cache
+
+
+num/*
+pre/*
+sub/*
+tag/*
