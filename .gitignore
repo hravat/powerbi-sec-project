@@ -9,3 +9,8 @@ num/*
 pre/*
 sub/*
 tag/*
+
+!num/.gitkeep
+!pre/.gitkeep
+!sub/.gitkeep
+!tag/.gitkeep
