@@ -1,0 +1,37 @@
+Balance Sheet Item,XBRL Tag,Parent Balance Sheet,Parent XBRL Tag,Statment Name
+Assets,Assets,Assets,Assets,Conssolidated Condensed Balance Sheet
+Current Assets,AssetsCurrent,Assets,Assets,Conssolidated Condensed Balance Sheet
+Cash and cash equivalents,CashAndCashEquivalentsAtCarryingValue,Current Assets,AssetsCurrent,Conssolidated Condensed Balance Sheet
+Short-term investments,MarketableSecuritiesCurrent,Current Assets,AssetsCurrent,Conssolidated Condensed Balance Sheet
+"Trade receivables, less allowances",AccountsReceivableNetCurrent,Current Assets,AssetsCurrent,Conssolidated Condensed Balance Sheet
+Inventories - Finished products,InventoryFinishedGoods,Current Assets,AssetsCurrent,Conssolidated Condensed Balance Sheet
+Inventories - Work in process,InventoryWorkInProcess,Current Assets,AssetsCurrent,Conssolidated Condensed Balance Sheet
+Inventories - Materials,InventoryRawMaterialsAndSupplies,Current Assets,AssetsCurrent,Conssolidated Condensed Balance Sheet
+Total inventories,InventoryNet,Current Assets,AssetsCurrent,Conssolidated Condensed Balance Sheet
+Prepaid expenses and other receivables,PrepaidExpenseAndOtherAssetsCurrent,Current Assets,AssetsCurrent,Conssolidated Condensed Balance Sheet
+Investments,MarketableSecuritiesNoncurrent,Assets,Assets,Conssolidated Condensed Balance Sheet
+"Property and equipment, at cost",PropertyPlantAndEquipmentGross,Assets,Assets,Conssolidated Condensed Balance Sheet
+Less: accumulated depreciation and amortization,AccumulatedDepreciationDepletionAndAmortizationPropertyPlantAndEquipment,"Property and equipment, at cost",PropertyPlantAndEquipmentGross,Conssolidated Condensed Balance Sheet
+Net property and equipment,PropertyPlantAndEquipmentNet,"Property and equipment, at cost",PropertyPlantAndEquipmentGross,Conssolidated Condensed Balance Sheet
+"Intangible assets, net of amortization",IntangibleAssetsNetExcludingGoodwill,Assets,Assets,Conssolidated Condensed Balance Sheet
+Goodwill,Goodwill,Assets,Assets,Conssolidated Condensed Balance Sheet
+Deferred income taxes and other assets,DeferredTaxAssetsNet,Assets,Assets,Conssolidated Condensed Balance Sheet
+Liabilities and Shareholders? Investment,LiabilitiesAndStockholdersEquity,Liabilities and Shareholders? Investment,LiabilitiesAndStockholdersEquity,Conssolidated Condensed Balance Sheet
+Current Liabilities,LiabilitiesCurrent,Liabilities and Shareholders? Investment,LiabilitiesAndStockholdersEquity,Conssolidated Condensed Balance Sheet
+Trade accounts payable,AccountsPayableCurrent,Current Liabilities,LiabilitiesCurrent,Conssolidated Condensed Balance Sheet
+"Salaries, wages and commissions",AccruedLiabilitiesCurrent,Current Liabilities,LiabilitiesCurrent,Conssolidated Condensed Balance Sheet
+Other accrued liabilities,OtherLiabilitiesCurrent,Current Liabilities,LiabilitiesCurrent,Conssolidated Condensed Balance Sheet
+Dividends payable,DividendsPayableCurrent,Current Liabilities,LiabilitiesCurrent,Conssolidated Condensed Balance Sheet
+Income taxes payable,AccruedIncomeTaxesCurrent,Current Liabilities,LiabilitiesCurrent,Conssolidated Condensed Balance Sheet
+Current portion of long-term debt,LongTermDebtCurrent,Current Liabilities,LiabilitiesCurrent,Conssolidated Condensed Balance Sheet
+Long-term debt,LongTermDebtNoncurrent,Liabilities and Shareholders? Investment,LiabilitiesCurrent,Conssolidated Condensed Balance Sheet
+"Post-employment obligations, deferred income taxes, and other long-term liabilities",OtherLiabilitiesNoncurrent,Liabilities and Shareholders? Investment,LiabilitiesCurrent,Conssolidated Condensed Balance Sheet
+Commitments and Contingencies,CommitmentsAndContingencies,Liabilities and Shareholders? Investment,LiabilitiesAndStockholdersEquity,Conssolidated Condensed Balance Sheet
+Shareholders Investment,StockholdersEquity,Shareholders Investment,LiabilitiesAndStockholdersEquity,Conssolidated Condensed Balance Sheet
+Preferred shares (Authorized but none issued),PreferredStockValue,Shareholders Investment,StockholdersEquity,Conssolidated Condensed Balance Sheet
+Common shares (Authorized & Issued),CommonStockValue,Shareholders Investment,StockholdersEquity,Conssolidated Condensed Balance Sheet
+"Common shares held in treasury, at cost",TreasuryStockValue,Shareholders Investment,StockholdersEquity,Conssolidated Condensed Balance Sheet
+Earnings employed in the business (Retained Earnings),RetainedEarningsAccumulatedDeficit,Shareholders Investment,StockholdersEquity,Conssolidated Condensed Balance Sheet
+Accumulated other comprehensive income (loss),AccumulatedOtherComprehensiveIncomeLossNetOfTax,Shareholders Investment,StockholdersEquity,Conssolidated Condensed Balance Sheet
+Noncontrolling Interests in Subsidiaries,MinorityInterest,Shareholders Investment,StockholdersEquity,Conssolidated Condensed Balance Sheet
+Total Shareholders Investment,StockholdersEquityIncludingPortionAttributableToNoncontrollingInteres,Total Shareholders Investment,StockholdersEquityIncludingPortionAttributableToNoncontrollingInteres,Conssolidated Condensed Balance Sheet
