@@ -1,0 +1,161 @@
+Project SEC_Database {
+  database_type: "SQL Server"
+}
+
+Table CALCULATED_TABLE_LatestAcceptedForms {
+  "Form Code" nvarchar
+  "Latest Accepted Date" datetime
+  cik nvarchar
+  prevrpt bigint
+  "Filing Status" nvarchar
+  fy nvarchar
+  fp nvarchar
+}
+
+Table DIM_BALANCE_SHEET {
+  Category nvarchar
+  Subcategory nvarchar
+  "XBRL Tag" nvarchar
+}
+
+Table DIM_BUSINESS_ADDRESS {
+  bas2 nvarchar
+  baph nvarchar
+  cik bigint [pk]
+  countryba nvarchar
+  stprba nvarchar
+  cityba nvarchar
+  zipba nvarchar
+  bas1 nvarchar
+}
+
+Table DIM_CONSOLIDATED_BALANCE_SHEET {
+  "Balance Sheet Item" nvarchar
+  "XBRL Tag" nvarchar
+  "Parent Balance Sheet" nvarchar
+  "Parent XBRL Tag" nvarchar
+  "Statment Name" nvarchar
+  BalanceSheetPath nvarchar
+  BalanceSheetLevel1 nvarchar
+  BalanceSheetLevel2 nvarchar
+  BalanceSheetLevel3 nvarchar
+  "Column" bigint
+  ConsolidatedBalanceSheet nvarchar
+}
+
+Table DIM_FORM {
+  "Form Code" nvarchar
+  "Form Name" nvarchar
+}
+
+Table DIM_MAILING_ADDRESS {
+  cik bigint [pk]
+  countryma nvarchar
+  stprma nvarchar
+  cityma nvarchar
+  zipma nvarchar
+  mas1 nvarchar
+  mas2 nvarchar
+}
+
+Table DIM_PREPERATION_OF_STATEMENTS {
+  "Source.Name" nvarchar
+  adsh nvarchar
+  report bigint
+  line bigint
+  stmt nvarchar
+  inpth bigint
+  rfile nvarchar
+  tag nvarchar
+  version nvarchar
+  plabel nvarchar
+  negating bigint
+  ColRelationship nvarchar
+  adsh_tag_version nvarchar
+}
+
+Table DIM_REGISTRANT {
+  cik nvarchar [pk]
+  name nvarchar
+  sic nvarchar
+  countryinc nvarchar
+  stprinc nvarchar
+  ein nvarchar
+  former nvarchar
+  changed nvarchar
+  afs nvarchar
+  wksi nvarchar
+}
+
+Table DIM_XBRL_TAG {
+  UpperColRelationship nvarchar
+  "Source.Name" nvarchar
+  tag nvarchar
+  version nvarchar
+  custom nvarchar
+  abstract nvarchar
+  datatype nvarchar
+  iord nvarchar
+  crdr nvarchar
+  tlabel nvarchar
+  doc nvarchar
+  ColRelationship nvarchar
+}
+
+Table FACT_FILING {
+  adsh nvarchar
+  cik nvarchar
+  fye bigint
+  "Form Code" nvarchar
+  period bigint
+  fy nvarchar
+  fp nvarchar
+  filed bigint
+  accepted datetime
+  prevrpt bigint
+  detail bigint
+  instance nvarchar
+  nciks bigint
+  aciks nvarchar
+  CIK_LENGTH bigint
+  "Filing Status" nvarchar
+}
+
+Table FACT_XBRL_FILING_METRICS {
+  "Source.Name" nvarchar
+  adsh nvarchar
+  tag nvarchar
+  version nvarchar
+  ddate nvarchar
+  qtrs bigint
+  uom nvarchar
+  segments nvarchar
+  coreg nvarchar
+  value float
+  footnote nvarchar
+  adsh_tag_version nvarchar
+  ColRelationship nvarchar
+  FormattedDate datetime
+}
+
+Table NavigationTable {
+  Role nvarchar
+}
+
+Table Slicer_Hierarchy {
+  Level1 nvarchar
+  Level2 nvarchar
+}
+
+Ref: CALCULATED_TABLE_LatestAcceptedForms.cik > DIM_REGISTRANT.cik
+Ref: CALCULATED_TABLE_LatestAcceptedForms."Form Code" > DIM_FORM."Form Code"
+Ref: DIM_BUSINESS_ADDRESS.cik > DIM_REGISTRANT.cik
+Ref: DIM_MAILING_ADDRESS.cik > DIM_REGISTRANT.cik
+Ref: DIM_PREPERATION_OF_STATEMENTS.adsh > FACT_XBRL_FILING_METRICS.adsh
+Ref: DIM_PREPERATION_OF_STATEMENTS.ColRelationship > DIM_XBRL_TAG.ColRelationship
+Ref: DIM_XBRL_TAG.tag > DIM_BALANCE_SHEET."XBRL Tag"
+Ref: DIM_XBRL_TAG.tag > DIM_CONSOLIDATED_BALANCE_SHEET."XBRL Tag"
+Ref: FACT_FILING.cik > DIM_REGISTRANT.cik
+Ref: FACT_FILING."Form Code" > DIM_FORM."Form Code"
+Ref: FACT_XBRL_FILING_METRICS.adsh > FACT_FILING.adsh
+Ref: FACT_XBRL_FILING_METRICS.ColRelationship > DIM_XBRL_TAG.ColRelationship
