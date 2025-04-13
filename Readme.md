@@ -61,13 +61,21 @@ Once these steps are perfoemed you shoud be able to use the project
 
 ## CEO Views 
 
-## 1.) Filing Status 
+## 1.) Filing Status on Filing Date
 
-   ![Filing Status](<Readme Images/FilingStatus.png>)
+   ![Filing Status](<Readme Images/FilingStatusFilingDate.png>)
 
-## 2.) Condensed Consolidated Balance Sheet 
+## 2.) Filing Status on Finaincial Year
+
+   ![Filing Status](<Readme Images/FilingStatusFilnacialYear.png>)
+
+## 3.) Condensed Consolidated Balance Sheet 
 
   ![Condensed Consolidated Balance Sheet ](<Readme Images/CondensedCOnsolidatedBlalanceSheet.png>)
+
+## 4.) Condesed Consolidated Statement of Earnings 
+
+  ![Condesed Consolidated Statement of Earnings ](<Readme Images/CondesedConsolidatedStatementofEarnings.png>)
 
 
 
