@@ -73,7 +73,7 @@ Once these steps are perfoemed you shoud be able to use the project
 
   ![Condensed Consolidated Balance Sheet ](<Readme Images/CondensedCOnsolidatedBlalanceSheet.png>)
 
-## 4.) Condesed Consolidated Statement of Earnings 
+## 4.) Condensed Consolidated Statement of Earnings 
 
   ![Condesed Consolidated Statement of Earnings ](<Readme Images/CondesedConsolidatedStatementofEarnings.png>)
 
