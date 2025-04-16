@@ -82,3 +82,5 @@ Once these steps are perfoemed you shoud be able to use the project
 ## Links to Medium Articles 
 
 https://medium.com/@hussain.ravat786/role-based-navigation-button-display-in-power-bi-fb783c36c669
+
+https://medium.com/@hussain.ravat786/behind-the-dashboards-data-modelling-for-sec-filings-in-power-bi-270afe9f07d7
